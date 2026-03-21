@@ -1,38 +1,111 @@
 🚀 **Built a Robust Multi-Factor Portfolio Strategy (Quant Research Project)**
 
 
-Quantitative research project focused on constructing a **robust multi-factor equity portfolio** using Python.
+# Robust Multi-Factor Portfolio Strategy
 
-The goal was to design a **systematic strategy with strong risk-adjusted performance, low drawdown, and practical portfolio construction methods**.
+This project implements a quantitative research pipeline for building and backtesting a robust multi-factor equity portfolio.
 
-🔬 **Research Components**
-• Factor Engineering (Momentum, Value, Quality, Low Volatility)
-• Cross-sectional normalization (Z-score)
-• Composite alpha signal construction
-• Portfolio optimization and weighting
-• Backtesting engine
-• Performance evaluation
+The strategy combines several well-known equity factors to construct a diversified portfolio with strong risk-adjusted returns.
 
-📊 **Backtest Results**
-• Sharpe Ratio: **1.12**
-• Annual Return: **22.9%**
-• Volatility: **18.4%**
-• Max Drawdown: **-27.8%**
+---
 
-The project follows a **modular quant research pipeline**, similar to frameworks used in systematic investment research:
+## Factors Used
 
-Data → Factor Models → Alpha Signal → Portfolio Construction → Backtesting → Performance Metrics
+The model uses four core factors widely studied in quantitative finance:
 
-🧠 **Next Steps**
-I’m currently working on improving the framework with:
-• Transaction cost modeling
-• Factor Information Coefficient (IC) analysis
-• Turnover control
-• Volatility targeting
+- **Momentum** – Stocks with strong past returns tend to continue performing well.
+- **Value** – Undervalued stocks tend to outperform over time.
+- **Quality** – Companies with strong financial stability and profitability.
+- **Low Volatility** – Stocks with lower volatility often deliver better risk-adjusted returns.
 
-🔗 GitHub Repository:
-https://github.com/shubham1068/projectwork_robust-multifactor-portfolio
+These factors are combined into a composite signal used to rank stocks.
 
-I’d appreciate feedback from the quant and systematic trading community!
+---
+
+## Research Pipeline
+
+The project implements a full quantitative research workflow:
+
+Price Data
+↓
+Factor Engineering
+↓
+Factor Normalization (Z-score)
+↓
+Composite Alpha Signal
+↓
+Portfolio Construction
+↓
+Backtesting Engine
+↓
+Performance Metrics 
+
+
+---
+
+## Portfolio Construction
+
+- Cross-sectional ranking of factor scores
+- Selection of top quantile stocks
+- Equal-weight portfolio allocation
+- Rebalanced periodically
+
+---
+
+## Performance Results
+
+Example backtest results:
+
+| Metric | Value |
+|------|------|
+| Sharpe Ratio | 1.12 |
+| Annual Return | 22.9% |
+| Volatility | 18.4% |
+| Max Drawdown | -27.8% |
+
+---
+
+## Project Structure
+project_work/
+
+data/
+prices.csv
+
+factors/
+momentum.py
+value.py
+quality.py
+lowvol.py
+utils.py
+
+portfolio/
+optimizer.py
+
+backtest/
+engine.py
+
+metrics/
+performance.py
+
+run_strategy.py 
+
+---
+
+## Future Improvements
+
+Planned improvements to the research framework:
+
+- Transaction cost modeling
+- Factor Information Coefficient (IC) analysis
+- Turnover control
+- Volatility targeting
+- Machine learning alpha models
+
+---
+
+## Author
+
+Shubham Pandey  
+BSc Computational Physics – MIT World Peace University
 
 #quantfinance #algorithmictrading #systematictrading #machinelearning #finance #portfoliooptimization #python
