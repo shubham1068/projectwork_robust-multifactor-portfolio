@@ -1,6 +1,7 @@
 🚀 **Built a Robust Multi-Factor Portfolio Strategy (Quant Research Project)**
 
-I recently completed a quantitative research project focused on constructing a **robust multi-factor equity portfolio** using Python.
+
+Quantitative research project focused on constructing a **robust multi-factor equity portfolio** using Python.
 
 The goal was to design a **systematic strategy with strong risk-adjusted performance, low drawdown, and practical portfolio construction methods**.
 
